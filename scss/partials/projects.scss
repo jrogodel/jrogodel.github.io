@@ -13,24 +13,12 @@
 .work_title {
 	color: $white;
 	// font-family: 'Montserrat', sans-serif;
-	font-size: 3rem;
+	padding-bottom: 2rem;
+	font-size: 2rem;
 	text-align: center;
 }
 
-// Clients alignment
 
-.clients_wrapper {
-	display: flex;
-	justify-content: center;
-	padding: 1em 20% 1.8em 20%;
-}
-
-.clients {
-	flex: 1;
-	img {
-		max-width: 7.5em;
-	}
-}
 
 
 // Slider dots 
@@ -110,27 +98,101 @@
 
 
 
-// Content
+// Testimonials
 
-.clients_title { 
-	font-size: 2.4rem;
-	font-weight: 900;
-	letter-spacing: -.10rem;
+.testimonials, .clients {
+	background-color: $primary-dark;
+	color: white;
+}
+
+.testimonials-title {
+	color: $white;
 	text-align: center;
-	padding: 2rem;
-} 
+	font-weight: 700;
+	font-size: 1.4rem;
+	margin-bottom: .8rem;
+	padding-top: 1.5em;
+
+	// letter-spacing: 3px;
+}
+
+.testimonials-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em 0 3rem 0;
+	align-items: center;
+	width: 60%;
+	margin: auto;
+}
+.testimonials-copy{
+	// flex: 3;
+	display: flex;
+}
+.testimonials-img {
+	// flex: 1;
+	padding-right: 2em;
+	border-radius: 4px;
+	
+}
 
 
+// Clients
 
-
+.clients-wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 1em 20% 3em 20%;
+	a {
+		flex: 1;
+		img {
+			max-width: 7.5em;
+		}
+	}
+}
 
 // Form
 
-.form {
-	font-size: 2rem;
+.contact-title {
+	color: $white;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.4rem;
+	margin-bottom: .8rem;
+	padding-top: 1.5em; 
 }
-.form_wrapper {
-	height: 400px;
-	margin: 4em 0 0 0;
+
+.contact {
+	// height: 400px;
 	background-color: $primary-light;
+	padding: 0 14rem;
 }
+
+.form {
+	font-size: 1.3rem;
+
+	p {
+		display: flex;
+		padding-right: 2rem;
+
+		label {
+			flex: 1;
+			display: flex;
+			background-color: $primary-dark;
+			color: white;
+			font-weight: 600;
+		}
+
+		input {
+			flex: 1;
+			padding: 0.8rem;
+			width: 100%;
+
+		}
+}
+}
+
+
+
+
+
