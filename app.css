@@ -386,11 +386,14 @@ a {
 /* ---------------   Banner Layout   --------------- */
 * {
   border-box: box-sizing;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
 
 .wrapper {
   width: 100%;
-  background-image: url(img/banner-image.jpg);
+  background-image: url(img/banner_background.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -414,7 +417,7 @@ a {
 
 /* ---------------   Header Styles   --------------- */
 nav {
-  margin: 3rem 3rem 0 3rem; }
+  margin: 3rem 0 0 0; }
 
 .logo {
   letter-spacing: 6px;
@@ -423,14 +426,15 @@ nav {
   text-transform: uppercase;
   font-family: 'Exo';
   font-weight: 900;
-  border: solid 3px #fff;
-  padding: .4rem 1.4rem; }
+  border: solid 2px #fff;
+  padding: .25rem 1.4rem; }
 
 .nav-text {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 1rem;
-  font-weight: 600; }
+  font-weight: 500;
+  letter-spacing: 0.4px; }
 
 /* ---------------   Content Styles   --------------- */
 .title {
@@ -446,32 +450,43 @@ nav {
   padding: 0 12em;
   text-align: center;
   line-height: 2rem;
-  font-weight: 400; }
+  font-weight: 500; }
 
 /* ---------------  Button Styles   --------------- */
 .button__wrapper {
   margin-top: 3.2rem; }
 
 .button {
-  padding: .6rem 3rem;
+  padding: .5rem 3rem;
   border-radius: 2rem;
   color: #fff;
   font-weight: 600;
   letter-spacing: .1rem;
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .button-primary {
-  background-color: #7ac483; }
+  background-color: #7f7caf;
+  padding: 1rem 5rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase; }
   .button-primary:hover {
-    background-color: #9dd4a4; }
+    background-color: #9e9cc2; }
 
 .button-secondary {
-  background-color: rgba(250, 250, 250, 0.15); }
+  font-size: 0.9rem;
+  padding: 0.75rem 4rem;
+  border: 2px solid #fff; }
+  .button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+.button-nav {
+  margin-left: 1.75rem; }
 
 .button-small {
   color: #fff;
-  font-size: 1rem;
-  padding: .6rem 1.75rem;
+  font-size: 1.1rem;
+  padding: .4rem 1.75rem;
   border-radius: 2rem;
   letter-spacing: .06rem; }
 
@@ -479,24 +494,26 @@ nav {
   padding: .35rem 2rem;
   color: #fff;
   font-weight: bold;
-  background-color: #7ac483; }
+  background-color: #7f7caf; }
 
 /* ---------------  Services Styles   --------------- */
 .services {
-  border-top: 3px solid #f2b632; }
+  border-top: 3px solid #252839; }
 
 .services_title {
-  margin-top: 1em;
+  color: #252839;
+  padding-bottom: 2rem;
+  font-size: 1.75rem;
   text-align: center;
-  font-size: 1.4rem;
   text-transform: uppercase;
-  color: #252839; }
+  padding-top: 1.4em; }
 
 .services__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 5em; }
 
 .service-card {
   width: 25rem;
@@ -510,10 +527,10 @@ nav {
   align-items: center;
   justify-content: center;
   align-content: center;
-  color: #0f212e; }
+  color: #252839; }
 
 .service-card-title {
-  margin-bottom: -0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 1.75rem; }
 
 .service-card-copy {
@@ -529,15 +546,16 @@ nav {
   background-color: #9fb798;
   width: 100%;
   text-align: center;
-  padding: 5rem 0 25rem 0;
+  padding: 2rem 0 25rem 0;
   position: relative;
   overflow: hidden; }
 
 .work_title {
-  color: #fff;
+  color: #252839;
   padding-bottom: 2rem;
-  font-size: 2rem;
-  text-align: center; }
+  font-size: 1.75rem;
+  text-align: center;
+  text-transform: uppercase; }
 
 .nav-dots {
   list-style: none; }
@@ -550,10 +568,10 @@ nav {
   position: relative;
   border-radius: 100%;
   display: inline-block;
-  background-color: #677077; }
+  background-color: #252839; }
   .nav-dots .nav-dot .nav-dots .nav-dot:hover {
     cursor: pointer;
-    background-color: #f2f1f8; }
+    background-color: #393e58; }
 
 .slider {
   list-style: none; }
@@ -591,16 +609,16 @@ nav {
       z-index: 2; }
 
 .testimonials, .clients {
-  background-color: #252839;
-  color: white; }
+  background-color: #fff;
+  color: #252839; }
 
 .testimonials-title {
-  color: #fff;
+  color: #252839;
+  padding-bottom: 3rem;
+  font-size: 1.75rem;
   text-align: center;
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: .8rem;
-  padding-top: 1.5em; }
+  text-transform: uppercase;
+  padding-top: 1.4em; }
 
 .testimonials-wrapper {
   display: flex;
@@ -612,47 +630,65 @@ nav {
   margin: auto; }
 
 .testimonials-copy {
-  display: flex; }
+  display: flex;
+  font-weight: 400;
+  color: #393e58;
+  font-size: 1.1rem;
+  text-align: justify; }
 
 .testimonials-img {
-  padding-right: 2em;
-  border-radius: 4px; }
+  margin-right: 3em;
+  margin-bottom: 1rem; }
 
 .clients-wrapper {
   display: flex;
   justify-content: center;
-  padding: 1em 20% 3em 20%; }
+  padding: 1em 20% 5em 20%; }
   .clients-wrapper a {
     flex: 1; }
     .clients-wrapper a img {
       max-width: 7.5em; }
 
-.contact-title {
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: .8rem;
-  padding-top: 1.5em; }
-
-.contact {
+.footer {
   background-color: #f2b632;
-  padding: 0 14rem; }
+  text-align: center; }
 
-.form {
-  font-size: 1.3rem; }
-  .form p {
-    display: flex;
-    padding-right: 2rem; }
-    .form p label {
-      flex: 1;
-      display: flex;
-      background-color: #252839;
-      color: white;
-      font-weight: 600; }
-    .form p input {
-      flex: 1;
-      padding: 0.8rem;
-      width: 100%; }
+.footer-title {
+  color: #252839;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding-top: 1.25em;
+  text-transform: uppercase; }
+
+.footer-copy {
+  margin: 1rem 30% 5rem 30%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #393e58; }
+
+.button-footer {
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+  padding: 1.25rem 5.5rem;
+  background-color: #7f7caf;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #252839; }
+  .button-footer:hover {
+    background-color: #9e9cc2; }
+
+.copywrite {
+  font-size: 1rem;
+  color: #252839;
+  font-weight: 900;
+  padding: 4rem 0 1rem 0;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .copywrite span {
+    letter-spacing: 0;
+    color: #7f7caf;
+    font-weight: 700;
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=app.css.map */

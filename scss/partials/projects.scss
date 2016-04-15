@@ -3,7 +3,7 @@
 	background-color: $olive-green; 
 	width: 100%;
 	text-align: center;
-	padding: 5rem 0 25rem 0;
+	padding: 2rem 0 25rem 0;
 	position: relative;
 	overflow: hidden;
 
@@ -11,11 +11,11 @@
 
 
 .work_title {
-	color: $white;
-	// font-family: 'Montserrat', sans-serif;
+	color: $primary-dark;
 	padding-bottom: 2rem;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 
@@ -39,11 +39,11 @@
 	position: relative;
 	border-radius: 100%;
 	display: inline-block;
-	background-color: $dark-gray;
+	background-color: $primary-dark;
 
 		.nav-dots .nav-dot:hover {
 			cursor: pointer;
-			background-color: $light-gray;
+			background-color: lighten($primary-dark, 10%);
 		}
 	}
 					
@@ -101,19 +101,18 @@
 // Testimonials
 
 .testimonials, .clients {
-	background-color: $primary-dark;
-	color: white;
+	background-color: $white;
+	color: $primary-dark;
 }
 
 .testimonials-title {
-	color: $white;
+	color: $primary-dark;
+	padding-bottom: 3rem;
+	font-size: 1.75rem;
 	text-align: center;
-	font-weight: 700;
-	font-size: 1.4rem;
-	margin-bottom: .8rem;
-	padding-top: 1.5em;
+	text-transform: uppercase;
+	padding-top: 1.4em;
 
-	// letter-spacing: 3px;
 }
 
 .testimonials-wrapper {
@@ -126,14 +125,15 @@
 	margin: auto;
 }
 .testimonials-copy{
-	// flex: 3;
 	display: flex;
+	font-weight: 400;
+	color: lighten($primary-dark, 10%);
+	font-size: 1.1rem;
+	text-align: justify;
 }
 .testimonials-img {
-	// flex: 1;
-	padding-right: 2em;
-	border-radius: 4px;
-	
+	margin-right: 3em;
+	margin-bottom: 1rem;
 }
 
 
@@ -142,7 +142,7 @@
 .clients-wrapper {
 	display: flex;
 	justify-content: center;
-	padding: 1em 20% 3em 20%;
+	padding: 1em 20% 5em 20%;
 	a {
 		flex: 1;
 		img {
@@ -153,46 +153,93 @@
 
 // Form
 
-.contact-title {
-	color: $white;
-	text-align: center;
-	font-weight: 700;
-	font-size: 1.4rem;
-	margin-bottom: .8rem;
-	padding-top: 1.5em; 
-}
+// .contact-title {
+// 	color: $white;
+// 	text-align: center;
+// 	font-weight: 700;
+// 	font-size: 1.4rem;
+// 	margin-bottom: .8rem;
+// 	padding-top: 1.5em; 
+// }
 
-.contact {
-	// height: 400px;
+// .contact {
+// 	height: 300px;
+// 	background-color: $primary-light;
+// 	padding: 0 14rem;
+// }
+
+// .form {
+// 	font-size: 1.3rem;
+// 	display: flex;
+// 	flex: row wrap;
+
+// 	// p {
+// 	// 	display: flex;
+// 	// 	padding-right: 2rem;
+
+// 	label {
+// 		background-color: $primary-dark;
+// 		color: white;
+// 		font-weight: 700;
+// 	}
+
+// 	input {
+// 		padding: 0.8rem;
+// 		width: 100%;
+
+// 	}
+
+// }
+
+
+.footer {
 	background-color: $primary-light;
-	padding: 0 14rem;
+	text-align: center;
 }
 
-.form {
-	font-size: 1.3rem;
-
-	p {
-		display: flex;
-		padding-right: 2rem;
-
-		label {
-			flex: 1;
-			display: flex;
-			background-color: $primary-dark;
-			color: white;
-			font-weight: 600;
-		}
-
-		input {
-			flex: 1;
-			padding: 0.8rem;
-			width: 100%;
-
-		}
-}
+.footer-title {
+	color: $primary-dark;
+	text-align: center;
+	font-weight: 900;
+	font-size: 2.5rem;
+	padding-top: 1.25em;
+	text-transform: uppercase;
 }
 
+.footer-copy {
+	margin: 1rem 30% 5rem 30%;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: lighten($primary-dark, 10%);
+}
 
+.button-footer {
+	margin-top: 4rem;
+	margin-bottom: 3.5rem;
+	padding: 1.25rem 5.5rem;
+	background-color: $lavender;
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: $primary-dark;
+	&:hover {
+	background-color: lighten($lavender, 10%);
+	}
+}
+
+.copywrite {
+	font-size: 1rem;
+	color: $primary-dark;
+	font-weight: 900;
+	padding: 4rem 0 1rem 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	span {
+		letter-spacing: 0;
+		color: $lavender;
+		font-weight: 700;
+		font-size: 1.2rem;
+	}
+}
 
 
 
