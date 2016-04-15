@@ -543,7 +543,7 @@ nav {
   margin: 7px 0 40px 0; }
 
 .work_wrapper {
-  background-color: #9fb798;
+  background-color: #fbe7a6;
   width: 100%;
   text-align: center;
   padding: 2rem 0 25rem 0;
@@ -552,7 +552,7 @@ nav {
 
 .work_title {
   color: #252839;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   font-size: 1.75rem;
   text-align: center;
   text-transform: uppercase; }
@@ -650,7 +650,7 @@ nav {
       max-width: 7.5em; }
 
 .footer {
-  background-color: #f2b632;
+  background-color: #fbe7a6;
   text-align: center; }
 
 .footer-title {
