@@ -133,7 +133,7 @@ small,
   outline: none;
   border: none;
   margin-left: 0.8em;
-  width: 40%;
+  /*width: 40%;*/
 }
 .nav-wrapper a:hover {
   color: #2ecc71;
