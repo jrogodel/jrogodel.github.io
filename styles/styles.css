@@ -117,7 +117,7 @@ small,
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
-  width: 30%;
+  /*width: 30%;*/
 }
 .nav-wrapper label {
   margin: 0 0 0 2px;
@@ -133,7 +133,7 @@ small,
   outline: none;
   border: none;
   margin-left: 0.8em;
-  width: 60%;
+  width: 40%;
 }
 .nav-wrapper a:hover {
   color: #2ecc71;
